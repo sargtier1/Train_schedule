@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Schedule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="assets/sytles.css" href="styles.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-light bg-light justify-content-between">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a> <h4>Train Schedule</h4> </a>
+        </ul>
+    </div>
+    </nav>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <div class="card">
+                <div class="card-header">
+                    Current Train Schedule
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm">
+                            <strong> Train Name </strong>
+                            <div id="train-name"></div>
+                        </div>
+                        <div class="col-sm">
+                            <strong> Destination </strong>
+                            <div id="destination"></div>
+                        </div>
+                        <div class="col-sm">
+                            <strong> Frequency (min) </strong>
+                            <div id="frequency"></div>
+                        </div>
+                        <div class="col-sm">
+                            <strong> Next Arrival </strong>
+                            <div id="next-arrival"></div>
+                        </div>
+                        <div class="col-sm">
+                            <strong> Minutes Away </strong>
+                            <div id="mins-away"></div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm">
+            <div class="card">
+                <div class="card-header">
+                    Add Train
+                </div>
+                <br>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"> Train Name </label>
+                        <input id="data-name" type="name" class="form-control" id="name-input" placeholder="Train Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"> Destination </label>
+                        <input id="data-destination" type="name" class="form-control" id="role-input" placeholder="Destination">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"> First Train Time </label>
+                        <input id="data-start" type="value" class="form-control" id="date-input" placeholder="(hh:mm - military time)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"> Frequency </label>
+                        <input id="data-freq" type="value" class="form-control" id="rate-input" placeholder="Frequency">
+                    </div>
+
+                    <button id="submit-btn" type="submit" class="btn btn-primary" id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+  <script type="text/javascript" src="assets/logic.js"></script>
+
+</body>
+</html>
+
+
+
+
